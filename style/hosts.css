@@ -1,0 +1,739 @@
+.hosts_controls{
+    width:100%;
+    height:68px;
+    position: absolute;
+    top:0;
+    left:0;
+    border-bottom: 2px solid #7C718D;
+}
+
+.controls_map_button{
+    position: absolute;
+    top:16px;
+    left:20px;
+    cursor:pointer;
+}
+
+.controls_settings_button{
+    position: absolute;
+    top:16px;
+    left:75px;
+    cursor:pointer;
+} 
+
+.controls_reservations_button{
+    position: absolute;
+    top:16px;
+    left:125px;
+    cursor:pointer;
+}
+
+.controls_settings_button path,
+.controls_reservations_button path,
+.controls_map_button path{
+    fill: #b9a4d7;
+    transition: 0.8s;
+}
+
+.controls_settings_button:hover path, 
+.controls_reservations_button:hover path,
+.controls_map_button:hover path{
+    fill: #f2ec70;
+}
+
+.controls_button_active path{
+    fill: #f2ec70;
+}
+
+.hosts_controls_date_selector{
+    width:260px;
+    height:68px;
+    position: absolute;
+    top:0;
+    left:calc(50% - 130px);
+}
+
+.hosts_controls_date_selector_value{
+    width:170px;
+    position: absolute;
+    top: 19px;
+    left: 45px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+}
+
+.date_selector_prev_button{
+    position: absolute;
+    top:19px;
+    left:5px;
+    cursor:pointer;
+}
+
+.date_selector_next_button{
+    position: absolute;
+    top:19px;
+    right:5px;
+    cursor:pointer;
+}
+
+.date_selector_prev_button path, 
+.date_selector_next_button path{
+    fill: #b9a4d7;
+    transition: 0.8s;
+}
+
+.date_selector_prev_button:hover path,
+.date_selector_next_button:hover path {
+    fill: #f2ec70;
+}
+
+.hosts_timeline{
+    width:100%;
+    height:calc(100% - 71px);
+    position: absolute;
+    top:70px;
+    left:0;
+    transition:0.5s;
+    border-bottom: 1px solid #7C718D;
+    overflow: auto;
+} 
+
+.hosts_settings{
+    width:100%;
+    height:0;
+    position: absolute;
+    top:70px;
+    left:0;
+    transition:0.5s;
+    border-bottom: 1px solid #7C718D;
+    overflow: hidden;
+} 
+
+.hosts_reservations{
+    width:100%;
+    height:0;
+    position: absolute;
+    top:70px;
+    left:0;
+    transition:0.5s;
+    border-bottom: 1px solid #7C718D;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.hosts_timeline_hosts_primary{
+    width:100px;
+    height:auto;
+    position:absolute;
+    top:44px;
+    left:0;
+}
+
+.hosts_timeline_hosts_lines{
+    width: calc(100% - 100px);
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    overflow-x: auto;
+}
+
+.hosts_timeline_primary_item {
+    width: 98px;
+    height: 43px;
+    margin: 0;
+    border-bottom: 1px solid #7C718D;
+    border-right: 2px solid #7C718D;
+    overflow: hidden;
+}
+
+.hosts_timeline_primary_item_icon{
+    position: relative;
+    top:4px;
+    left:4px
+}
+
+.hosts_timeline_primary_item_icon path{
+    fill: #b9a4d7;
+}
+
+.primary_item_playing path{
+    fill: #f2ec70;
+}
+
+.hosts_timeline_primary_item_name{
+    position: relative;
+    top: -19px;
+    left: 27px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #b9a4d7;
+}
+
+.hosts_timeline_primary_item_username{
+    position: relative;
+    top: -18px;
+    left: 3px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #b9a4d7;
+}
+
+.hosts_timeline_item{
+    width:1440px;
+    height:43px;
+    border-bottom:1px solid #7C718D;
+    overflow:hidden;
+}
+
+.hosts_timeline_item_separator{
+    width:59px;
+    height:100%;
+    border-right:1px solid #7C718D;
+    display:inline-block;
+    float:left;
+}
+
+.hosts_timeline_item_separator_text{
+    width: 1px;
+    position: relative;
+    top: 18px;
+    left: 4px;
+    color: #b9a4d7;
+    font-size: 20px;
+    font-family: 'Montserrat';
+}
+
+.hosts_settings_creation_form{
+    width:400px;
+    height:120px;
+    position: absolute;
+    top:15px;
+    left:15px;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+}
+
+.hosts_settings_creation_form_name{
+    width: 300px;
+    height: 32px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align:center;
+} 
+
+.hosts_settings_creation_form_identifier{
+    width: 300px;
+    height: 32px;
+    position: absolute;
+    top: 70px;
+    left: 15px;
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.hosts_settings_creation_form_add_button {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    cursor: pointer;
+}
+
+.hosts_settings_creation_form_add_button path{
+    fill: #b9a4d7;
+    transition: 0.8s;
+}
+
+.hosts_settings_creation_form_add_button:hover path{
+    fill: #f2ec70;
+}
+
+.hosts_settings_items_list{
+    width:400px;
+    height:400px;
+    position: absolute;
+    top:150px;
+    left:15px;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.hosts_settings_item_container{
+    width:100%;
+    height:60px;
+    border-bottom: 1px solid #7C718D;
+}
+
+.hosts_settings_item_delete_button {
+    position: relative;
+    top:7px;
+    left:5px;
+    cursor:pointer;
+}
+
+.hosts_settings_item_icon{
+    position: relative;
+    top: 7px;
+    left: 10px;
+}
+
+.hosts_settings_item_delete_button path,
+.hosts_settings_item_icon path{
+    fill: #b9a4d7;
+    transition: 0.5s;
+}
+
+.hosts_settings_item_delete_button:hover path{
+    fill: #e70f0f;
+}
+
+.hosts_settings_item_name{
+    position: relative;
+    top: -22px;
+    left: 71px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    color: #b9a4d7;
+}
+
+.hosts_settings_item_identifier{
+    position: relative;
+    top: -20px;
+    left: 7px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: #b9a4d7;
+}
+
+.hosts_reservations_users_search {
+    width:400px;
+    height:300px;
+    position: absolute;
+    top:15px;
+    left:15px;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+}
+
+.hosts_reservations_users_search_input{
+    width: 300px;
+    height: 34px;
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align:center;
+}
+
+.hosts_reservations_users_search_result{
+    width:100%;
+    height:230px;
+    position: absolute;
+    top:70px;
+    left:0;
+    border-top:1px solid #7C718D;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.users_search_container{
+    width:100%;
+    height:60px;
+    border-bottom: 1px solid #7C718D;
+    transition: 0.8s;
+    cursor:pointer;
+}
+
+.users_search_container:hover{
+    background: #f2ec70;
+    color: #2F2144;
+}
+
+.users_search_container:hover .users_search_container_icon path,
+.users_search_container:hover .users_search_container_icon circle,
+.users_search_container:hover .users_search_container_phone_icon path{
+    fill: #2F2144;
+}
+
+.users_search_container_active {
+    background: #f2ec70;
+    color: #2F2144;
+}
+
+.users_search_container_active .users_search_container_icon path,
+.users_search_container_active .users_search_container_icon circle,
+.users_search_container_active .users_search_container_phone_icon path {
+    fill: #2F2144;
+}
+
+.users_search_container_icon {
+    position: relative;
+    top: 7px;
+    left: 6px;
+}
+
+.users_search_container_phone_icon {
+    position: relative;
+    top: 32px;
+    left: -17px;
+}
+
+.users_search_container_username {
+    position: relative;
+    top: -22px;
+    left: 38px;
+    font-family: 'Montserrat';
+    font-size: 26px;
+    color: #7C718D;
+    transition: 0.8s;
+}
+
+.users_search_container_phone {
+    position: relative;
+    left: 38px;
+    margin-top: -21px;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    color: #7C718D;
+    transition: 0.8s;
+}
+
+.users_search_container_icon path,
+.users_search_container_icon circle,
+.users_search_container_phone_icon path {
+    fill: #7C718D;
+    transition: 0.8s;
+}
+
+.date_selector{
+    width:400px;
+    height:200px;
+    position: absolute;
+    top:335px;
+    left:15px;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+}
+
+.date_selector_begin_date_header{
+    width:100%;
+    text-align: center;
+    margin-top:10px;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #7C718D;
+}
+
+.date_selector_begin_date_input{
+    width: 180px;
+    height: 34px;
+    position: absolute;
+    top: 52px;
+    left: 19px;
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align: center;
+} 
+
+.date_selector_begin_time_input{
+    width: 137px;
+    height: 34px;
+    position: absolute;
+    top: 52px;
+    right: 19px;
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.date_selector_end_date_header{
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #7C718D;
+}
+
+.date_selector_end_date_input{
+    width: 180px;
+    height: 34px;
+    position: absolute;
+    top: 140px;
+    left: 19px;
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.date_selector_end_time_input{
+    width: 137px;
+    height: 34px;
+    position: absolute;
+    top: 140px;
+    right: 19px;
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.hosts_reservations_hosts_selector{
+    width:400px;
+    height:200px;
+    position: absolute;
+    top:555px;
+    left:15px;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.hosts_reservations_item_container{
+    width:100%;
+    height:40px;
+    border: 1px solid #7C718D;
+    cursor:pointer;
+    transition: 0.8s;
+    color: #7C718D;
+}
+
+.hosts_reservations_item_icon{
+    position: relative;
+    top:7px;
+    left:7px;
+}
+
+.hosts_reservations_item_icon path{
+    fill: #b9a4d7;
+    transition: 0.8s;
+}
+
+.hosts_reservations_item_name{
+    position: relative;
+    top: -24px;
+    left: 39px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    transition: 0.5s;
+}
+
+.hosts_reservations_item_container:hover {
+    background: #f2ec70;
+    color: #2F2144;
+}
+
+.hosts_reservations_item_container:hover .hosts_reservations_item_icon path{
+    fill: #2F2144;
+}
+
+.hosts_reservations_item_active {
+    background: #f2ec70;
+    color: #2F2144;
+}
+
+.hosts_reservations_item_active .hosts_reservations_item_icon path{
+    fill: #2F2144;
+}
+
+.hosts_reservations_add_button {
+    width: 300px;
+    height: 43px;
+    position: absolute;
+    left: 490px;
+    top: 21px;
+    background: #F2EC70;
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.hosts_reservations_add_button:hover {
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(242, 236, 112, 0.5);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(242, 236, 112, 0.5);
+    box-shadow: 0px 0px 8px 0px rgba(242, 236, 112, 0.5);
+}
+
+.reservations_list {
+    width:400px;
+    height:450px;
+    position: absolute;
+    top:85px;
+    left:440px;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.reservations_list_item{
+    width: 170px;
+    height:170px;
+    display: inline-block;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    margin:10px;
+    text-align: left;
+}
+
+.reservations_list_item_icon {
+    position: relative;
+    top: 7px;
+    left: 7px;
+}
+
+.reservations_list_item_icon path {
+    fill: #b9a4d7;
+}
+
+.reservations_list_delete_button {
+    position: relative;
+    top: 7px;
+    left: 100px;
+    cursor:pointer;
+}
+
+.reservations_list_delete_button path {
+    fill: #b9a4d7;
+    transition: 0.5s;
+}
+
+.reservations_list_delete_button:hover path{
+    fill: #e70f0f;
+}
+
+.reservations_list_item_pc_name{
+    width: 90px;
+    position: relative;
+    top: -22px;
+    left: 40px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    transition: 0.5s;
+    text-align: center;
+    color:#b9a4d7;
+}
+
+.reservations_list_item_user_icon{
+    position: relative;
+    top: -5px;
+    left: 9px;
+}
+
+.reservations_list_item_user_icon path,
+.reservations_list_item_user_icon circle{
+    fill: #b9a4d7;
+}
+
+.reservations_list_item_username{
+    width: 100%;
+    position: relative;
+    top: -30px;
+    left: 0px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    transition: 0.5s;
+    text-align: center;
+    color: #b9a4d7;
+}
+
+.reservations_list_item_time_begin_icon {
+    position: relative;
+    top: -8px;
+    left: 9px;
+}
+
+.reservations_list_item_time_begin_icon path{
+    fill: #b9a4d7;
+}
+
+.reservations_list_item_time_begin {
+    width: 100%;
+    position: relative;
+    top: -33px;
+    left: 0px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    transition: 0.5s;
+    text-align: center;
+    color: #b9a4d7;
+}
+
+.reservations_list_item_duration_icon {
+    position: relative;
+    top: -10px;
+    left: 9px;
+}
+
+.reservations_list_item_duration_icon path,
+.reservations_list_item_duration_icon circle {
+    fill: #b9a4d7;
+}
+
+.reservations_list_item_duration {
+    width: 100%;
+    position: relative;
+    top: -35px;
+    left: 0px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    transition: 0.5s;
+    text-align: center;
+    color: #b9a4d7;
+}

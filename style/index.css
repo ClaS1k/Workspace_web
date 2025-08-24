@@ -1,0 +1,130 @@
+.workspace{
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: calc(50% - 300px);
+    left: calc(50% - 400px);
+}
+
+.workspace_header{
+    width: 100%;
+    margin-top:20px;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 48px;
+    text-align: center;
+}
+
+.login_input{
+    width: 500px;
+    height: 45px;
+    position: absolute;
+    top: 125px;
+    left: 149px;
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align:center;
+}
+
+.password_input{
+    width: 500px;
+    height: 45px;
+    position: absolute;
+    top: 200px;
+    left: 149px;
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align:center;
+}
+
+.login_input:hover,
+.password_input:hover {
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(242, 236, 112, 0.5);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(242, 236, 112, 0.5);
+    box-shadow: 0px 0px 8px 0px rgba(242, 236, 112, 0.5);
+}
+
+.login_input::-webkit-input-placeholder,
+.password_input::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #A9A2B2;
+}
+
+.login_input:-moz-placeholder,
+.password_input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #A9A2B2;
+    opacity: 1;
+}
+
+.login_input::-moz-placeholder,
+.password_input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #A9A2B2;
+    opacity: 1;
+}
+
+.login_input:-ms-input-placeholder,
+.password_input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #A9A2B2;
+}
+
+.login_input::-ms-input-placeholder,
+.password_input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #A9A2B2;
+}
+
+.login_input::placeholder,
+.password_input::placeholder {
+    /* Most modern browsers support this now. */
+    color: #A9A2B2;
+}
+
+.error_message{
+    width:100%;
+    position: absolute;
+    top:320px;
+    left:0;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    color: rgb(255, 104, 93);
+}
+
+.auth_button {
+    width: 400px;
+    height: 60px;
+    position: absolute;
+    left: 199px;
+    bottom: 25px;
+    background: #F2EC70;
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.auth_button:hover {
+    width: 420px;
+    left: 189px;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(242, 236, 112, 0.5);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(242, 236, 112, 0.5);
+    box-shadow: 0px 0px 8px 0px rgba(242, 236, 112, 0.5);
+    font-size: 24px;
+}

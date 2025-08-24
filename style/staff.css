@@ -1,0 +1,903 @@
+.workspace_tabs_controls{
+    width:100%;
+    height:68px;
+    position: absolute;
+    top:0;
+    left:0;
+    border-bottom: 2px solid #7C718D;
+}
+
+.workspace_controls_staff {
+    width:calc(50% - 1px);
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    border-right: 2px solid #7C718D;
+    color:#b9a4d7;
+    cursor:pointer;
+    transition:0.8s;
+}
+
+.workspace_controls_staffgroups{
+    width: calc(50% - 1px);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: calc(50% + 1px);
+    color:#b9a4d7;
+    cursor:pointer;
+    transition:0.8s;
+}
+
+.tab_active, .workspace_controls_staff:hover, .workspace_controls_staffgroups:hover{
+    color:#2F2144;
+    background:#f2ec70;
+}
+
+.workspace_controls_text{
+    width:100%;
+    text-align: center;
+    padding-top:13px;
+    font-family: 'Montserrat';
+    font-size: 32px;
+}
+
+.workspace_tabs_container{
+    width:100%;
+    height:calc(100% - 70px);
+    position: absolute;
+    top: 70px;
+    left: 0;
+}
+
+.workspace_staff_tab{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+} 
+
+.workspace_staffgroups_tab{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    display:none;
+}
+
+.workspace_staffgroups_list{
+    width:250px;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    border-right: 2px solid #7C718D;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.workspace_staff_list{
+    width:250px;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    border-right: 2px solid #7C718D;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.workspace_staffgroup_button {
+    width: 100%;
+    height: 60px;
+    transition: 1s;
+    cursor: pointer;
+    color: #b9a4d7;
+}
+
+.workspace_staffgroup_button:hover {
+    -webkit-box-shadow: 50px 0px 14px 0px #f2eb7047;
+    -moz-box-shadow: 50px 0px 14px 0px #f2eb7047;
+    box-shadow: 50px 0px 14px 0px #f2eb7047;
+    background: #f2ec70;
+    color: #2F2144;
+}
+
+.workspace_staffgroup_text {
+    width: 100%;
+    text-align: center;
+    padding-top: 13px;
+    font-family: 'Montserrat';
+    font-size: 26px;
+}
+
+.workspace_staffgroups_creation{
+    width:calc(100% - 252px);
+    height:100%;
+    position:absolute;
+    top:0;
+    left:252px;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+.workspace_staffgroups_edit{
+    width:calc(100% - 252px);
+    height:100%;
+    position:absolute;
+    top:0;
+    left:252px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    display: none;
+}
+
+.workspace_staffgroups_creation_name_input{
+    width: 500px;
+    height: 45px;
+    position: absolute;
+    top: 30px;
+    left: calc(50% - 251px);
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align:center;
+}
+
+.platform_access_header{
+    width:100%;
+    font-family: 'Montserrat';
+    font-size: 28px;
+    color:#b9a4d7;
+    position: absolute;
+    top:100px;
+    left:0;
+    text-align: center;
+}
+
+.flags_access_header{
+    width: 100%;
+    font-family: 'Montserrat';
+    font-size: 28px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 280px;
+    left: 0;
+    text-align: center;
+}
+
+.tabs_access_header{
+    width: 100%;
+    font-family: 'Montserrat';
+    font-size: 28px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 800px;
+    left: 0;
+    text-align: center;
+}
+
+.platform_access{
+    width:100%;
+    height:100px;
+    position: absolute;
+    top:160px;
+    left:0;
+    border-bottom:2px solid #b9a4d7;
+}
+
+.flags_access{
+    width:100%;
+    height:440px;
+    position: absolute;
+    top:340px;
+    left:0;
+    border-bottom: 2px solid #b9a4d7;
+}
+
+.tabs_access{
+    width:100%;
+    height:320px;
+    position: absolute;
+    top:860px;
+    left:0;
+    border-bottom: 2px solid #b9a4d7;
+}
+
+.web_platform_access_header{
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    text-align: center;
+}
+
+.mobile_platform_access_header{
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    text-align: center;
+}
+
+.web_platform_access_input{
+    width:20px;
+    height:20px;
+    position: absolute;
+    top: 55px;
+    left: calc(25% - 10px);
+}
+
+.mobile_platform_access_input{
+    width:20px;
+    height:20px;
+    position: absolute;
+    top: 55px;
+    left: calc(75% - 10px);
+}
+
+.users_get_flag_access_header{
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    text-align: center;
+}
+.users_get_flag_access_input{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 55px;
+    left: calc(25% - 10px);
+}
+
+.users_edit_flag_access_header {
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    text-align: center;
+}
+.users_edit_flag_access_input {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 55px;
+    left: calc(75% - 10px);
+}
+
+.payments_flag_access_header{
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    text-align: center;
+}
+.payments_flag_access_input{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 125px;
+    left: calc(25% - 10px);
+}
+
+.config_flag_access_header{
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    text-align: center;
+}
+.config_flag_access_input{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 125px;
+    left: calc(75% - 10px); 
+}
+
+.staff_flag_access_header {
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    text-align: center;
+}
+.staff_flag_access_input {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 195px;
+    left: calc(25% - 10px);
+}
+
+.staffgroups_flag_access_header {
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    text-align: center;
+}
+
+.staffgroups_flag_access_input {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 195px;
+    left: calc(75% - 10px);
+}
+
+.hosts_controls_flag_access_header {
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 220px;
+    left: 0;
+    text-align: center;
+}
+
+.hosts_controls_flag_access_input {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 265px;
+    left: calc(25% - 10px);
+}
+
+.hosts_edit_flag_access_header {
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 220px;
+    left: 50%;
+    text-align: center;
+}
+
+.hosts_edit_flag_access_input {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 265px;
+    left: calc(75% - 10px);
+}
+
+.market_main_flag_access_header {
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 290px;
+    left: 0;
+    text-align: center;
+}
+
+.market_main_flag_access_input {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 335px;
+    left: calc(25% - 10px);
+}
+
+.market_edit_flag_access_header {
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 290px;
+    left: 50%;
+    text-align: center;
+}
+
+.market_edit_flag_access_input {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 335px;
+    left: calc(75% - 10px);
+}
+
+.apps_flag_access_header {
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 360px;
+    left: 0;
+    text-align: center;
+}
+
+.apps_flag_access_input {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 405px;
+    left: calc(25% - 10px);
+}
+
+.users_get_flag_access_header{
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    text-align: center;
+}
+.users_get_flag_access_input{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 55px;
+    left: calc(25% - 10px);
+}
+
+.users_edit_flag_access_header {
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    text-align: center;
+}
+.users_edit_flag_access_input {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 55px;
+    left: calc(75% - 10px);
+}
+
+.payments_flag_access_header{
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    text-align: center;
+}
+.payments_flag_access_input{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 125px;
+    left: calc(25% - 10px);
+}
+
+.config_flag_access_header{
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    text-align: center;
+}
+.config_flag_access_input{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 125px;
+    left: calc(75% - 10px); 
+}
+
+.staff_flag_access_header {
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    text-align: center;
+}
+.staff_flag_access_input {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 195px;
+    left: calc(25% - 10px);
+}
+
+.staffgroups_flag_access_header {
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    text-align: center;
+}
+
+.staffgroups_flag_access_input {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 195px;
+    left: calc(75% - 10px);
+}
+
+.hosts_tabs_access_header {
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    text-align: center;
+}
+
+.hosts_tabs_access_input {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 55px;
+    left: calc(25% - 10px);
+}
+
+.sales_tabs_access_header {
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    text-align: center;
+}
+
+.sales_tabs_access_input {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 55px;
+    left: calc(75% - 10px);
+}
+
+.market_tabs_access_header {
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    text-align: center;
+}
+
+.market_tabs_access_input {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 125px;
+    left: calc(25% - 10px);
+}
+
+.staff_tabs_access_header {
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    text-align: center;
+}
+
+.staff_tabs_access_input {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 125px;
+    left: calc(75% - 10px);
+}
+
+.apps_tabs_access_header {
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    text-align: center;
+}
+
+.apps_tabs_access_input {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 195px;
+    left: calc(25% - 10px);
+}
+
+.config_tabs_access_header {
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    text-align: center;
+}
+
+.config_tabs_access_input {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 195px;
+    left: calc(75% - 10px);
+}
+
+.users_tabs_access_header{
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 230px;
+    left: 0;
+    text-align: center;
+}
+.users_tabs_access_input{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 275px;
+    left: calc(25% - 10px);
+}
+
+.create_staffgroup_button {
+    width: 400px;
+    height: 60px;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: 1230px;
+    background: #F2EC70;
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.create_staffgroup_button:hover {
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(242, 236, 112, 0.5);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(242, 236, 112, 0.5);
+    box-shadow: 0px 0px 8px 0px rgba(242, 236, 112, 0.5);
+}
+
+.create_staffgroup_freespace{
+    width: 400px;
+    height: 50px;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: 1280px;
+    background: #00000000;
+}
+
+.workspace_staffgroups_edit_header{
+    width: 100%;
+    font-family: 'Montserrat';
+    font-size: 32px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    text-align: center;
+}
+
+.workspace_staff_edit_header{
+    width: 100%;
+    font-family: 'Montserrat';
+    font-size: 32px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    text-align: center;
+}
+
+.workspace_staff_creation {
+    width: calc(100% - 252px);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 252px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.workspace_staff_editor{
+    width: calc(100% - 252px);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 252px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: none;
+}
+
+.workspace_staff_creation_name_input{
+    width: 500px;
+    height: 45px;
+    position: absolute;
+    top: 25px;
+    left: calc(50% - 251px);
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.workspace_staff_creation_second_name_input{
+    width: 500px;
+    height: 45px;
+    position: absolute;
+    top: 95px;
+    left: calc(50% - 251px);
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.workspace_staff_creation_staffgroup_selector, .workspace_staff_edit_staffgroup_selector{
+    width: 500px;
+    height: 45px;
+    position: absolute;
+    top: 165px;
+    left: calc(50% - 247px);
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.workspace_staff_creation_login_input{
+    width: 500px;
+    height: 45px;
+    position: absolute;
+    top: 230px;
+    left: calc(50% - 251px);
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.workspace_staff_creation_password_input{
+    width: 500px;
+    height: 45px;
+    position: absolute;
+    top: 305px;
+    left: calc(50% - 251px);
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.create_staff_button{
+    width: 400px;
+    height: 60px;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: 450px;
+    background: #F2EC70;
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.edit_staff_update_button{
+    width: 300px;
+    height: 60px;
+    position: absolute;
+    left: calc(50% - 315px);
+    top: 450px;
+    background: #F2EC70;
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 10px;
+} 
+
+.edit_staff_leave_button{
+    width: 300px;
+    height: 60px;
+    position: absolute;
+    left: calc(50% + 15px);
+    top: 450px;
+    background: #F2EC70;
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 10px;
+}

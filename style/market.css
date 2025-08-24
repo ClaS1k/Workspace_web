@@ -1,0 +1,1102 @@
+.market_controls {
+    width: 100%;
+    height: 68px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid #7C718D;
+}
+
+.controls_products_button {
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.controls_groups_button {
+    position: absolute;
+    top: 16px;
+    left: 75px;
+    cursor: pointer;
+}
+
+.controls_combo_button{
+    position: absolute;
+    top: 16px;
+    left: 125px;
+    cursor: pointer;
+}
+
+.controls_invoice_button{
+    position: absolute;
+    top: 16px;
+    left: 175px;
+    cursor: pointer;
+}
+
+.controls_history_button {
+    position: absolute;
+    top: 16px;
+    left: 225px;
+    cursor: pointer;
+}
+
+.controls_products_button path,
+.controls_groups_button path,
+.controls_combo_button path,
+.controls_invoice_button path,
+.controls_history_button path
+{
+    fill: #b9a4d7;
+    transition: 0.8s;
+}
+
+.controls_products_button:hover path,
+.controls_groups_button:hover path,
+.controls_combo_button:hover path,
+.controls_invoice_button:hover path,
+.controls_history_button:hover path {
+    fill: #f2ec70;
+}
+
+.controls_button_active path {
+    fill: #f2ec70;
+}
+
+.products_space {
+    width: 100%;
+    height: calc(100% - 71px);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    transition: 0.5s;
+    border-bottom: 1px solid #7C718D;
+    overflow: auto;
+}
+
+.groups_space {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    transition: 0.5s;
+    border-bottom: 1px solid #7C718D;
+    overflow: hidden;
+}
+
+.combo_space {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    transition: 0.5s;
+    border-bottom: 1px solid #7C718D;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.invoice_space {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    transition: 0.5s;
+    border-bottom: 1px solid #7C718D;
+    overflow: hidden;
+}
+
+.history_space {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    transition: 0.5s;
+    border-bottom: 1px solid #7C718D;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.products_creation_form{
+    width:400px;
+    height:250px;
+    position: absolute;
+    top:15px;
+    left:15px;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+}
+
+.products_list {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 280px;
+    left: 15px;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.products_creation_form_name{
+    width: 300px;
+    height: 32px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align:center;
+}
+
+.products_creation_form_group_selector{
+    width: 313px;
+    height: 32px;
+    position: absolute;
+    top: 64px;
+    left: 15px;
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align:center;
+}
+
+.products_creation_form_add_button {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    cursor: pointer;
+}
+
+.products_creation_form_add_button path {
+    fill: #b9a4d7;
+    transition: 0.8s;
+}
+
+.products_creation_form_add_button:hover path {
+    fill: #f2ec70;
+}
+
+.products_creation_form_cast_sheme_settings{
+    width:100%;
+    height:140px;
+    position: absolute;
+    top:110px;
+    left:0;
+    border-top: 1px solid #7C718D;
+}
+
+.products_creation_cast_sheme_currency_selector{
+    width: 150px;
+    height: 32px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.products_creation_cast_sheme_currency_value{
+    width: 135px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    left: 180px;
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.products_creation_cast_sheme_add_button {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    cursor: pointer;
+}
+
+.products_creation_cast_sheme_add_button path {
+    fill: #b9a4d7;
+    transition: 0.8s;
+}
+
+.products_creation_cast_sheme_add_button:hover path {
+    fill: #f2ec70;
+}
+
+.products_creation_cast_sheme_added_currency{
+    width:100%;
+    height: 76px;
+    position: absolute;
+    top:63px;
+    left:0; 
+}
+
+.products_creation_cast_sheme_item{
+    width:78px;
+    height:20px;
+    display:inline-block;
+    margin-top: 10px;
+    margin-left: 15px;
+    border-radius: 5px;
+    background: #b9a4d7;
+}
+
+.products_creation_cast_sheme_item_value{
+    width:100%;
+    text-align: center;
+    position: relative;
+    top:1px;
+    left:0;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    color: black;
+
+}
+
+.product_container{
+    width:100%;
+    height:120px;
+    border-bottom:1px solid #7C718D;
+}
+
+.product_container_delete_button {
+    position: relative;
+    top: 7px;
+    left: 7px;
+    cursor: pointer;
+}
+
+.product_container_delete_button path{
+    fill: #b9a4d7;
+    transition: 0.5s;
+}
+
+.product_container_delete_button:hover path {
+    fill: #e70f0f;
+}
+
+.product_container_name{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #b9a4d7;
+    position: relative;
+    top: -21px;
+    left: 38px;
+}
+
+.product_container_quantity_icon{
+    position: relative;
+    top: -45px;
+    left: 367px;
+    cursor: pointer;
+}
+
+.product_container_quantity_icon path{
+    fill: #b9a4d7;
+    transition: 0.5s;
+}
+
+.product_container_quantity_icon:hover path {
+    fill: #f2ec70;
+}
+
+.product_container_quantity {
+    width: 40px;
+    text-align: right;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #b9a4d7;
+    position: relative;
+    top: -74px;
+    left: 321px;
+}
+
+.product_container_group_icon {
+    position: relative;
+    top: -63px;
+    left: 7px;
+}
+
+.product_container_group_icon path {
+    fill: #b9a4d7;
+}
+
+.product_container_group{
+    width: 40px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #b9a4d7;
+    position: relative;
+    top: -91px;
+    left: 37px;
+}
+
+.product_container_coast_sheme{
+    width: 100%;
+    height: 45px;
+    position: relative;
+    top: -81px;
+    left: 0;
+}
+
+.product_container_cast_sheme_item{
+    width: 78px;
+    height: 20px;
+    display: inline-block;
+    margin-top: 7px;
+    margin-left: 7px;
+    border-radius: 5px;
+    background: #b9a4d7;
+}
+
+.products_quantity_correct {
+    width: 370px;
+    height: 90px;
+    position: absolute;
+    top: 280px;
+    left: 430px;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: none;
+}
+
+.products_quantity_correct_header{
+    width: calc(100% - 20px);
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #b9a4d7;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
+
+.products_quantity_correct_value{
+    width: 280px;
+    height: 30px;
+    position: absolute;
+    top: 45px;
+    left: 10px;
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.products_quantity_correct_acceptance {
+    position: absolute;
+    top: 45px;
+    right: 18px;
+    cursor: pointer;
+}
+
+.products_quantity_correct_acceptance path {
+    fill: #b9a4d7;
+    transition: 0.8s;
+}
+
+.products_quantity_correct_acceptance:hover path {
+    fill: #f2ec70;
+}
+
+.groups_creation_form{
+    width:400px;
+    height:113px;
+    position: absolute;
+    top:15px;
+    left:15px;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+}
+
+.groups_creation_form_name{
+    width: 300px;
+    height: 32px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align:center;
+}
+
+.groups_creation_supergroup_id{
+    width: 313px;
+    height: 32px;
+    position: absolute;
+    top: 64px;
+    left: 15px;
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.groups_creation_form_add_button {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    cursor: pointer;
+}
+
+.groups_creation_form_add_button path {
+    fill: #b9a4d7;
+    transition: 0.8s;
+}
+
+.groups_creation_form_add_button:hover path {
+    fill: #f2ec70;
+}
+
+.supergroups_creation_form{
+    width:400px;
+    height:67px;
+    position: absolute;
+    top:15px;
+    left:430px;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+}
+
+.group_list{
+    width:400px;
+    height:400px;
+    position: absolute;
+    top:147px;
+    left:15px;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.subgroup_list{
+    width:400px;
+    height:400px;
+    position: absolute;
+    top:147px;
+    left:430px;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.group_single {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #7C718D;
+}
+
+.group_single_icon_delete_button {
+    position: relative;
+    top: 7px;
+    left: 369px;
+    cursor: pointer;
+}
+
+.group_single_dropdown_button{
+    position: relative;
+    top: 7px;
+    left: 285px;
+    cursor: pointer;
+}
+
+.group_single_icon {
+    position: relative;
+    top: 7px;
+    left: -20px;
+}
+
+.group_single_icon_delete_button path,
+.group_single_dropdown_button path,
+.group_single_icon path {
+    fill: #b9a4d7;
+    transition: 0.5s;
+}
+
+.group_single_icon_delete_button:hover path{
+    fill: #e70f0f;
+}
+
+.group_single_dropdown_button:hover path {
+    fill: #f2ec70;
+}
+
+.group_single_name {
+    width:200px;
+    position: relative;
+    top: -21px;
+    left: 43px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #b9a4d7;
+}
+
+.history_operation_correct{
+    width:100%;
+    height:100px;
+    border-bottom: 1px solid #7C718D;
+}
+
+.history_operation_icon {
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.history_operation_icon path {
+    fill: #b9a4d7;
+}
+
+.history_operation_product{
+    position: relative;
+    top: -20px;
+    left: 45px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #b9a4d7;
+}
+
+.history_operation_staff_name{
+    width:210px;
+    position: relative;
+    top: -44px;
+    left: calc(100% - 220px);
+    text-align: right;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #b9a4d7;
+}
+
+.history_operation_old_quantity{
+    position: relative;
+    top: -39px;
+    left: 45px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #b9a4d7;
+}
+
+.history_operation_new_quantity{
+    position: relative;
+    top: -35px;
+    left: 45px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #b9a4d7;
+}
+
+.history_operation_sale{
+    width:100%;
+    height:100px;
+    border-bottom: 1px solid #7C718D;
+}
+
+.combo_primary{
+    width:280px;
+    height:400px;
+    position: absolute;
+    top:15px;
+    left:15px;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.combo_creation_form{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 15px;
+    left: 310px;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+}
+
+.combo_creation_form_name{
+    width: 304px;
+    height: 32px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.combo_creation_form_cast_sheme_settings {
+    width: 100%;
+    height: 140px;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    border-top: 1px solid #7C718D;
+}
+
+.combo_creation_positions_controls{
+    width: 100%;
+    height: calc(100% - 207px);
+    position: absolute;
+    top:205px;
+    left:0;
+    border-top: 2px solid #7C718D;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.combo_creation_position{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #7C718D;
+}
+
+.combo_creation_position_text{
+    margin: 5px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #7C718D;
+}
+
+.combo_creation_position_add{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #7C718D;
+    cursor: pointer;
+}
+
+.combo_creation_products_search{
+    width: 400px;
+    height: 260px;
+    position: absolute;
+    top: 430px;
+    left: 310px;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+}
+
+.combo_viewer{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 15px;
+    left: 310px;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    display: none;
+}
+
+.combo_viewer_controls{
+    width:100%;
+    height:34px;
+    position: absolute;
+    top:0;
+    left:0;
+    border-bottom: 1px solid #7C718D;
+} 
+
+.combo_viewer_positions{
+    width: 100%;
+    height: 359px;
+    position: absolute;
+    top: 35px;
+    left: 0;
+}
+
+
+.combo_primary_item{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #7C718D;
+    color:#b9a4d7;
+    transition: 0.5s;
+    cursor:pointer;
+}
+
+.combo_primary_item:hover{
+    color: #f2ec70;
+}
+
+.combo_primary_item_text{
+    width:100%;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    position:relative;
+    top:5px;
+}
+
+.combo_creation_products_search_query {
+    width: 353px;
+    height: 32px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.combo_creation_products_search_result{
+    width: 100%;
+    height: calc(100% - 66px);
+    position: absolute;
+    top: 65px;
+    left: 0;
+    border-top: 1px solid #7C718D;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.combo_creation_products_search_result_item{
+    width:100%;
+    height:70px;
+    border-bottom: 1px solid #7C718D;
+}
+
+.combo_creation_products_search_result_item_name{
+    position: relative;
+    top:5px;
+    left:7px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color:#b9a4d7;
+}
+
+.combo_creation_products_search_result_item_value{
+    width: 103px;
+    height: 22px;
+    position: relative;
+    top: 6px;
+    left: 7px;
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 19px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align: center
+}
+
+.combo_creation_products_search_result_item_add_button {
+    position: relative;
+    top: 0;
+    left: 236px;
+    cursor: pointer;
+}
+
+.combo_creation_products_search_result_item_add_button path {
+    fill: #b9a4d7;
+    transition: 0.8s;
+}
+
+.combo_creation_products_search_result_item_add_button:hover path {
+    fill: #f2ec70;
+}
+
+.invoice_controls{
+    width:400px;
+    height:400px;
+    position: absolute;
+    top:15px;
+    left:15px;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+}
+
+.invoice_controls_item{
+    width:100%;
+    height:60px;
+    border-bottom: 1px solid #7C718D;
+    color: #b9a4d7;
+    cursor:pointer
+}
+
+.invoice_controls_item:hover{
+    color: #f2ec70;
+}
+
+.invoice_controls_creation_item_text{
+    font-family: 'Montserrat';
+    font-size: 22px;
+    width:100%;
+    text-align: center;
+    position: relative;
+    top:14px;
+    transition:0.8s;
+}
+
+.invoice_controls_item_icon{
+    position: relative;
+    top:13px;
+    left:10px;
+}
+
+.invoice_controls_item_text{
+    font-family: 'Montserrat';
+    font-size: 22px;
+    width:100%;
+    text-align: center;
+    position: relative;
+    top:-20px;
+    transition:0.8s;
+}
+
+.invoice_icon_accepted path{
+    fill: #73ff00;
+}
+
+.invoice_icon_await path{
+    fill: #b9a4d7;
+}
+
+.invoice_icon_deleted path{
+    fill: #ff0000;
+}
+
+.invoice_constructor{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 15px;
+    left: 430px;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    display:block;
+}
+
+.invoice_constructor_products_search{
+    width: 400px;
+    height: 260px;
+    position: absolute;
+    top: 430px;
+    left: 430px;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    display:block;
+}
+
+.invoice_constructor_form_type_selector {
+    width: 317px;
+    height: 32px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.invoice_constructor_form_summ{
+    width: 304px;
+    height: 32px;
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    background: #695F78;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding-left: 10px;
+    color: white;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.invoice_constructor_products_list{
+    width:100%;
+    height:calc(100% - 110px);
+    position: absolute;
+    top:110px;
+    left:0;
+    border-top: 1px solid #7C718D;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.invoice_constructor_products_item{
+    width:100%;
+    height:40px;
+    border-bottom: 1px solid #7C718D;
+}
+
+.invoice_constructor_products_item_text{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color:#b9a4d7;
+    width:100%;
+    text-align:center;
+    position: relative;
+    top:7px;
+}
+
+.invoice_viewer{
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top: 15px;
+    left: 430px;
+    border: 1px solid #7C718D;
+    border-radius: 5px;
+    display:none;
+}
+
+.invoice_viewer_header{
+    width:100%;
+    height:220px;
+    position: absolute;
+    top:0;
+    left:0;
+    border-bottom: 1px solid #7C718D;
+}
+
+.invoice_viewer_title{
+    width:100%;
+    text-align: center;
+    position: absolute;
+    top: 15px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    color:#b9a4d7;
+}
+
+.invoice_viewer_description{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 52px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    color: #b9a4d7;
+}
+
+.invoice_viewer_status{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 90px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    color: #b9a4d7;
+}
+
+.invoice_viewer_accept_button{
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+    cursor: pointer;
+}
+
+.invoice_viewer_delete_button{
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+    cursor: pointer;
+}
+
+.invoice_viewer_accept_button path,
+.invoice_viewer_delete_button path{
+    fill: #b9a4d7;
+    transition: 0.8s;
+}
+
+.invoice_viewer_accept_button:hover path{
+    fill: #44ff00;
+}
+
+.invoice_viewer_delete_button:hover path {
+    fill: #ff0000;
+}
+
+.invoice_viewer_products{
+    width:100%;
+    height:calc(100% - 221px);
+    position: absolute;
+    top:221px;
+    left:0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.invoice_viewer_product_item{
+    width:100%;
+    height:40px;
+    border-bottom: 1px solid #7C718D;
+}
+
+.invoice_viewer_product_item_text{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #b9a4d7;
+    position: relative;
+    top:7px;
+    left:7px;
+}

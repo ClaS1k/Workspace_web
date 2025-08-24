@@ -1,0 +1,210 @@
+.current_club_stats {
+    width: calc(50% - 1px);
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 2px solid #7C718D;
+    border-bottom: 2px solid #7C718D;
+}
+
+.active_shifts {
+    width: calc(50% - 1px);
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: calc(50% + 1px);
+    border-bottom: 2px solid #7C718D;
+}
+
+.transactions_log {
+    width: 100%;
+    height: calc(50% - 151px);
+    position: absolute;
+    top: 302px;
+    left: 0;
+    border-bottom: 2px solid #7C718D;
+}
+
+.orders_log {
+    width: 100%;
+    height: calc(50% - 151px);
+    position: absolute;
+    top: calc(50% + 151px);
+    left: 0;
+}
+
+.section_header {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    text-align: center;
+    color: #b9a4d7;
+    border-bottom: 1px solid #7C718D;
+    padding-top: 10px;
+}
+
+.section_body {
+    width: 100%;
+    height: calc(100% - 61px);
+    position: absolute;
+    top: 61px;
+    left: 0;
+    overflow: auto;
+}
+
+.current_club_stats_position {
+    width: 90%;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    text-align: left;
+    color: #b9a4d7;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.active_shift_elem{
+    width:100%;
+    height:50px;
+    border-bottom: 1px solid #7C718D;
+}
+
+.active_shift_left_section{
+    width:50%;
+    height: 100%;
+    position: relative;
+    top:0;
+    left:0;
+    border-right: 1px solid #7C718D;
+}
+
+.active_shift_right_section{
+    width: calc(50% - 1px);
+    height: 100%;
+    position: relative;
+    top: -100%;
+    left: calc(50% + 1px);
+}
+
+.active_shift_section_text {
+    width: 100%;
+    color: #b9a4d7;
+    font-family: 'Montserrat';
+    font-size: 21px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.transaction_elem {
+    width:100%;
+    height:50px;
+    border-bottom: 1px solid #7C718D;
+}
+
+.transaction_first_section{
+    width:calc(25% - 1px);
+    height:100%;
+    position: relative;
+    top:0;
+    left:0;
+    border-right: 1px solid #7C718D;
+}
+
+.transaction_second_section{
+    width:calc(20% - 1px);
+    height:100%;
+    position: relative;
+    top:-100%;
+    left:25%;
+    border-right: 1px solid #7C718D;
+}
+
+.transaction_third_section{
+    width:calc(20% - 1px);
+    height:100%;
+    position: relative;
+    top:-200%;
+    left:45%;
+    border-right: 1px solid #7C718D;
+}
+
+.transaction_four_section{
+    width:calc(10% - 1px);
+    height:100%;
+    position: relative;
+    top:-300%;
+    left:65%;
+    border-right: 1px solid #7C718D;
+}
+
+.transaction_five_section{
+    width:calc(5% - 1px);
+    height:100%;
+    position: relative;
+    top:-400%;
+    left:75%;
+    border-right: 1px solid #7C718D;
+}
+
+.transaction_six_section{
+    width:20%;
+    height:100%;
+    position: relative;
+    top:-500%;
+    left:80%;
+}
+
+.transaction_section_text{
+    width: 100%;
+    color: #b9a4d7;
+    font-family: 'Montserrat';
+    font-size: 21px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.order_elem{
+    width:100%;
+    height:50px;
+    border-bottom: 1px solid #7C718D;
+}
+
+.order_first_section{
+    width:calc(33% - 1px);
+    height:100%;
+    position: relative;
+    top:0;
+    left:0;
+    border-right: 1px solid #7C718D;
+}
+
+.order_second_section {
+    width: calc(33% - 1px);
+    height: 100%;
+    position: relative;
+    top: -100%;
+    left: 33%;
+    border-right: 1px solid #7C718D;
+}
+
+.order_third_section{
+    width: 34%;
+    height: 100%;
+    position: relative;
+    top: -200%;
+    left: 66%;
+}
+
+.order_section_text{
+    width: 100%;
+    color: #b9a4d7;
+    font-family: 'Montserrat';
+    font-size: 21px;
+    text-align: center;
+    padding-top: 12px;
+}

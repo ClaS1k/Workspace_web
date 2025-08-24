@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Главная</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/staff.css">
+    <script defer src="scripts/workspace.js"></script>
+    <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/staff.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <nav>
+
+        </nav>
+
+        <div class="workspace">
+
+            <div class="workspace_tabs_controls">
+                <div class="workspace_controls_staff tab_active" onclick="open_staff_tab()">
+                    <p class="workspace_controls_text">Сотрудники</p>
+                </div>
+
+                <div class="workspace_controls_staffgroups" onclick="open_staffgroup_tab()">
+                    <p class="workspace_controls_text">Группы прав</p>
+                </div>
+            </div>
+
+            <div class="workspace_tabs_container">
+                <div class="workspace_staff_tab">
+                    <div class="workspace_staff_list">
+                        <div class="workspace_staffgroup_button">
+                            <p class="workspace_staffgroup_text">Создать +</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="workspace_staff_creation">
+                        <input type="text" class="workspace_staff_creation_name_input" placeholder="Имя">
+                        <input type="text" class="workspace_staff_creation_second_name_input" placeholder="Фамилия">
+                        <select class="workspace_staff_creation_staffgroup_selector"></select>
+                        <input type="text" class="workspace_staff_creation_login_input" placeholder="Логин">
+                        <input type="password" class="workspace_staff_creation_password_input" placeholder="Пароль">
+
+                        <button class="create_staff_button" onclick="create_staff()">Создать</button>
+                    </div>
+
+                    <div class="workspace_staff_editor">
+                        <h2 class="workspace_staff_edit_header">-</h2>
+
+                        <select class="workspace_staff_edit_staffgroup_selector"></select>
+
+                        <button class="edit_staff_update_button" onclick="update_staff()">Обновить</button>
+                        <button class="edit_staff_leave_button">Уволить</button>
+                    </div>
+                </div>
+
+                <div class="workspace_staffgroups_tab">
+                    <div class="workspace_staffgroups_list">
+                        <div class="workspace_staffgroup_button">
+                            <p class="workspace_staffgroup_text">Создать +</p>
+                        </div>
+                    </div>
+
+                    <div class="workspace_staffgroups_creation">
+                        <input type="text" class="workspace_staffgroups_creation_name_input" placeholder="Название группы">
+
+                        <h2 class="platform_access_header">Доступ к платформам</h2>
+                        <div class="platform_access">
+                            <p class="web_platform_access_header">Web</p>
+                            <input type="checkbox" class="web_platform_access_input">
+
+                            <p class="mobile_platform_access_header">Mobile</p>
+                            <input type="checkbox" class="mobile_platform_access_input">
+                        </div>
+
+                        <h2 class="flags_access_header">Флаги разрешений</h2>
+                        <div class="flags_access">
+                            <p class="users_get_flag_access_header">Получение пользователей</p>
+                            <input type="checkbox" class="users_get_flag_access_input">
+
+                            <p class="users_edit_flag_access_header">Изменение пользователей</p>
+                            <input type="checkbox" class="users_edit_flag_access_input">
+
+                            <p class="payments_flag_access_header">Платежи</p>
+                            <input type="checkbox" class="payments_flag_access_input">
+
+                            <p class="config_flag_access_header">Конфигурация</p>
+                            <input type="checkbox" class="config_flag_access_input">
+
+                            <p class="staff_flag_access_header">Сотрудники</p>
+                            <input type="checkbox" class="staff_flag_access_input">
+
+                            <p class="staffgroups_flag_access_header">Группы</p>
+                            <input type="checkbox" class="staffgroups_flag_access_input">
+
+                            <p class="hosts_controls_flag_access_header">Управление хостами</p>
+                            <input type="checkbox" class="hosts_controls_flag_access_input">
+
+                            <p class="hosts_edit_flag_access_header">Изменение хостов</p>
+                            <input type="checkbox" class="hosts_edit_flag_access_input">
+
+                            <p class="market_main_flag_access_header">Магазин(основное)</p>
+                            <input type="checkbox" class="market_main_flag_access_input">
+
+                            <p class="market_edit_flag_access_header">Магазин(управление)</p>
+                            <input type="checkbox" class="market_edit_flag_access_input">
+
+                            <p class="apps_flag_access_header">Приложения</p>
+                            <input type="checkbox" class="apps_flag_access_input">
+                        </div>
+
+                        <h2 class="tabs_access_header">Флаги вкладок(веб)</h2>
+                        <div class="tabs_access">
+                            <p class="hosts_tabs_access_header">Хосты</p>
+                            <input type="checkbox" class="hosts_tabs_access_input">
+
+                            <p class="sales_tabs_access_header">Продажи</p>
+                            <input type="checkbox" class="sales_tabs_access_input">
+
+                            <p class="market_tabs_access_header">Магазин</p>
+                            <input type="checkbox" class="market_tabs_access_input">
+                            
+                            <p class="staff_tabs_access_header">Сотрудники</p>
+                            <input type="checkbox" class="staff_tabs_access_input">
+
+                            <p class="apps_tabs_access_header">Приложения</p>
+                            <input type="checkbox" class="apps_tabs_access_input">
+
+                            <p class="config_tabs_access_header">Конфигурация</p>
+                            <input type="checkbox" class="config_tabs_access_input">
+
+                            <p class="users_tabs_access_header">Пользователи</p>
+                            <input type="checkbox" class="users_tabs_access_input">
+                        </div>
+
+                        <button class="create_staffgroup_button" onclick="create_staffgroup()">Создать</button>
+                        <div class="create_staffgroup_freespace"></div>
+                    </div>
+
+                    <div class="workspace_staffgroups_edit">
+                        <h2 class="workspace_staffgroups_edit_header">Админ</h2>
+
+                        <h2 class="platform_access_header">Доступ к платформам</h2>
+                        <div class="platform_access">
+                            <p class="web_platform_access_header">Web</p>
+                            <input type="checkbox" class="web_platform_access_input edit_web_platform_access_input">
+                        
+                            <p class="mobile_platform_access_header">Mobile</p>
+                            <input type="checkbox" class="mobile_platform_access_input edit_mobile_platform_access_input">
+                        </div>
+                        
+                        <h2 class="flags_access_header">Флаги разрешений</h2>
+                        <div class="flags_access">
+                            <p class="users_get_flag_access_header">Получение пользователей</p>
+                            <input type="checkbox" class="users_get_flag_access_input edit_users_get_flag_access_input">
+                        
+                            <p class="users_edit_flag_access_header">Изменение пользователей</p>
+                            <input type="checkbox" class="users_edit_flag_access_input edit_users_edit_flag_access_input">
+                        
+                            <p class="payments_flag_access_header">Платежи</p>
+                            <input type="checkbox" class="payments_flag_access_input edit_payments_flag_access_input">
+                        
+                            <p class="config_flag_access_header">Конфигурация</p>
+                            <input type="checkbox" class="config_flag_access_input edit_config_flag_access_input">
+                        
+                            <p class="staff_flag_access_header">Сотрудники</p>
+                            <input type="checkbox" class="staff_flag_access_input edit_staff_flag_access_input">
+                        
+                            <p class="staffgroups_flag_access_header">Группы</p>
+                            <input type="checkbox" class="staffgroups_flag_access_input edit_staffgroups_flag_access_input">
+                        
+                            <p class="hosts_controls_flag_access_header">Управление хостами</p>
+                            <input type="checkbox" class="hosts_controls_flag_access_input edit_hosts_controls_flag_access_input">
+                        
+                            <p class="hosts_edit_flag_access_header">Изменение хостов</p>
+                            <input type="checkbox" class="hosts_edit_flag_access_input edit_hosts_edit_flag_access_input">
+                        
+                            <p class="market_main_flag_access_header">Магазин(основное)</p>
+                            <input type="checkbox" class="market_main_flag_access_input edit_market_main_flag_access_input">
+                        
+                            <p class="market_edit_flag_access_header">Магазин(управление)</p>
+                            <input type="checkbox" class="market_edit_flag_access_input edit_market_edit_flag_access_input">
+                        
+                            <p class="apps_flag_access_header">Приложения</p>
+                            <input type="checkbox" class="apps_flag_access_input edit_apps_flag_access_input">
+                        </div>
+                        
+                        <h2 class="tabs_access_header">Флаги вкладок(веб)</h2>
+                        <div class="tabs_access">
+                            <p class="hosts_tabs_access_header">Хосты</p>
+                            <input type="checkbox" class="hosts_tabs_access_input edit_hosts_tabs_access_input">
+                        
+                            <p class="sales_tabs_access_header">Продажи</p>
+                            <input type="checkbox" class="sales_tabs_access_input edit_sales_tabs_access_input">
+                        
+                            <p class="market_tabs_access_header">Магазин</p>
+                            <input type="checkbox" class="market_tabs_access_input edit_market_tabs_access_input">
+                        
+                            <p class="staff_tabs_access_header">Сотрудники</p>
+                            <input type="checkbox" class="staff_tabs_access_input edit_staff_tabs_access_input">
+                        
+                            <p class="apps_tabs_access_header">Приложения</p>
+                            <input type="checkbox" class="apps_tabs_access_input edit_apps_tabs_access_input">
+                        
+                            <p class="config_tabs_access_header">Конфигурация</p>
+                            <input type="checkbox" class="config_tabs_access_input edit_config_tabs_access_input">
+
+                            <p class="users_tabs_access_header">Пользователи</p>
+                            <input type="checkbox" class="users_tabs_access_input edit_users_tabs_access_input">
+                        </div>
+                        
+                        <button class="create_staffgroup_button" onclick="update_staffgroup()">Обновить</button>
+                        <div class="create_staffgroup_freespace"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

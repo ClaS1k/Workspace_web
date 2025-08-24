@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Главная</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/users.css">
+    <script defer src="scripts/workspace.js"></script>
+    <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/users.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <nav>
+
+        </nav>
+
+        <div class="workspace">
+
+           <div class="users_search">
+                <div class="users_search_controls">
+                    <input type="text" class="users_search_query_input" placeholder="Запрос" oninput="search_input_handler(this)">
+
+                    <svg class="users_search_add_button" onclick="show_user_creation()" height="34" viewBox="0 0 24 24" width="34" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
+                        <path d="m12 0a12 12 0 1 0 12 12 12.013 12.013 0 0 0 -12-12zm5 13h-4v4h-2v-4h-4v-2h4v-4h2v4h4z" />
+                    </svg>
+
+                </div>
+
+                <div class="users_search_result">
+                </div>
+           </div>
+
+           <div class="users_tabs">
+                <div class="user_creation_tab">
+                    <svg xmlns="http://www.w3.org/2000/svg" onclick="show_subtab_user()" class="users_creation_profile_icon user_creation_subtab_active" data-name="Layer 1" viewBox="0 0 24 24" width="100" height="100">
+                        <path d="M16.043,14H7.957A4.963,4.963,0,0,0,3,18.957V24H21V18.957A4.963,4.963,0,0,0,16.043,14Z" />
+                        <circle cx="12" cy="6" r="6" />
+                    </svg>
+
+                    <svg class="users_creation_usergroups_icon" onclick="show_subtab_usergroups()" height="100" viewBox="0 0 24 24" width="100" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
+                        <path d="m7.5 13a4.5 4.5 0 1 1 4.5-4.5 4.505 4.505 0 0 1 -4.5 4.5zm7.5 7a5.006 5.006 0 0 0 -5-5h-5a5.006 5.006 0 0 0 -5 5v4h15zm2.5-11a4.5 4.5 0 1 1 4.5-4.5 4.505 4.505 0 0 1 -4.5 4.5zm1.5 2h-5a4.793 4.793 0 0 0 -.524.053 6.514 6.514 0 0 1 -1.576 2.216 7.008 7.008 0 0 1 5.1 6.731h7v-4a5.006 5.006 0 0 0 -5-5z" />
+                    </svg>
+
+                    <div class="user_creation_subtab_user">
+                        <div class="user_creation_name_container">
+                            <span class="user_creation_container_title">Имя:</span>
+                            <input type="text" class="user_creation_container_input user_creation_name" placeholder="Владимир">
+                        </div>
+    
+                        <div class="user_creation_surname_container">
+                            <span class="user_creation_container_title">Фамилия:</span>
+                            <input type="text" class="user_creation_container_input user_creation_surname" placeholder="Селищев">
+                        </div>
+    
+                        <div class="user_creation_username_container">
+                            <span class="user_creation_container_title">Логин:</span>
+                            <input type="text" class="user_creation_container_input user_creation_username" placeholder="username123">
+                        </div>
+    
+                        <div class="user_creation_password_container">
+                            <span class="user_creation_container_title">Пароль:</span>
+                            <input type="password" class="user_creation_container_input user_creation_password" placeholder="as4Kfn14wD">
+                        </div>
+    
+                        <div class="user_creation_usergroup_container">
+                            <span class="user_creation_container_title">Группа:</span>
+                            <select class="user_creation_group_selector">
+                            </select>
+                        </div>
+    
+                        <div class="user_creation_email_container">
+                            <span class="user_creation_container_title">Email:</span>
+                            <input type="text" class="user_creation_container_input user_creation_email" placeholder="email@example.ru">
+                        </div>
+    
+                        <div class="user_creation_phone_container">
+                            <span class="user_creation_container_title">Телефон:</span>
+                            <input type="text" class="user_creation_container_input user_creation_phone" placeholder="+7(977)999-99-99">
+                        </div>
+    
+                        <div class="user_creation_country_container">
+                            <span class="user_creation_container_title">Страна:</span>
+                            <input type="text" class="user_creation_container_input user_creation_country" placeholder="Россия">
+                        </div>
+    
+                        <div class="user_creation_city_container">
+                            <span class="user_creation_container_title">Город:</span>
+                            <input type="text" class="user_creation_container_input user_creation_city" placeholder="Москва">
+                        </div>
+    
+                        <div class="user_creation_adress_container">
+                            <span class="user_creation_container_title">Адрес:</span>
+                            <input type="text" class="user_creation_container_input user_creation_adress" placeholder="5-я Парковая, д. 1">
+                        </div>
+
+                        <button class="create_user_button" onclick="create_user()">Создать</button>
+                    </div>
+
+                    <div class="user_creation_subtab_usergroups">
+                        <h2 class="in_develop_header">В разработке!</h2>
+                    </div>
+
+                </div>
+
+                <div class="user_viewer_tab">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="users_viewer_profile_icon" 
+                        data-name="Layer 1" viewBox="0 0 24 24" width="100"
+                        height="100">
+                        <path d="M16.043,14H7.957A4.963,4.963,0,0,0,3,18.957V24H21V18.957A4.963,4.963,0,0,0,16.043,14Z" />
+                        <circle cx="12" cy="6" r="6" />
+                    </svg>
+
+                    <div class="users_viewer_time_container">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="users_viewer_time_icon" 
+                        data-name="Layer 1" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12,24C5.383,24,0,18.617,0,12S5.383,0,12,0s12,5.383,12,12-5.383,12-12,12Zm5-13h-4V5h-2V13h6v-2Z" />
+                        </svg>
+
+                        <p class="users_viewer_time_value">4ч 35м</p>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" onclick="show_notes_modal()" class="users_viewer_notes_button" 
+                    data-name="Layer 1" viewBox="0 0 24 24" width="40" height="40">
+                        <path
+                            d="M22.922,1.7a2.985,2.985,0,0,0-2.458-.648l-6.18,1.123A3.993,3.993,0,0,0,12,3.461,3.993,3.993,0,0,0,9.716,2.172L3.536,1.049A3,3,0,0,0,0,4V20.834l12,2.183,12-2.183V4A2.992,2.992,0,0,0,22.922,1.7ZM11,20.8,2,19.166V4a1,1,0,0,1,1.179-.983L9.358,4.14A2,2,0,0,1,11,6.108Zm11-1.636L13,20.8V6.108A2,2,0,0,1,14.642,4.14l6.179-1.123A1,1,0,0,1,22,4Z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" onclick="show_ban_prompt()" class="users_viewer_ban_button"
+                     data-name="Layer 1" viewBox="0 0 24 24" width="40" height="40">
+                        <path
+                            d="m5.391,9.109c-.391-.391-.391-1.023,0-1.414L12.793.293c.391-.391,1.023-.391,1.414,0s.391,1.023,0,1.414l-7.402,7.402c-.195.195-.451.293-.707.293s-.512-.098-.707-.293Zm8.496,8.495c.195.195.451.293.707.293s.512-.098.707-.293l7.402-7.401c.391-.391.391-1.023,0-1.414-.391-.391-1.023-.391-1.414,0l-7.402,7.401c-.391.391-.391,1.023,0,1.414Zm-.522-3.555l5.871-5.871-4.414-4.414-5.871,5.871,1.5,1.5L.293,21.293c-.391.391-.391,1.023,0,1.414.195.195.451.293.707.293s.512-.098.707-.293l10.158-10.158,1.5,1.5Zm9.635,7.951h-.051c-.232-1.14-1.242-2-2.449-2h-8c-1.208,0-2.217.86-2.449,2h-.051c-.553,0-1,.447-1,1s.447,1,1,1h13c.553,0,1-.447,1-1s-.447-1-1-1Z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" onclick="show_finance_modal()" class="users_viewer_finance_button"
+                     data-name="Layer 1" viewBox="0 0 24 24" width="40" height="40">
+                        <path
+                            d="M13.053,5.079c.971-.909,2.344-2.36,2.894-3.744,.255-.641-.257-1.335-.947-1.335h-6c-.69,0-1.202,.693-.947,1.335,.55,1.384,1.923,2.835,2.894,3.744C5.569,5.878,1,12.618,1,18c0,3.309,2.691,6,6,6h10c3.309,0,6-2.691,6-6,0-5.382-4.569-12.122-9.947-12.921Zm-2.409,8.682l3.042,.507c1.341,.223,2.315,1.373,2.315,2.733,0,1.654-1.346,3-3,3v1c0,.552-.448,1-1,1s-1-.448-1-1v-1h-.268c-1.068,0-2.063-.574-2.598-1.499-.276-.478-.113-1.089,.365-1.366,.476-.277,1.089-.114,1.366,.365,.178,.308,.511,.5,.867,.5h2.268c.551,0,1-.449,1-1,0-.378-.271-.698-.644-.76l-3.042-.507c-1.341-.223-2.315-1.373-2.315-2.733,0-1.654,1.346-3,3-3v-1c0-.552,.448-1,1-1s1,.448,1,1v1h.268c1.067,0,2.063,.575,2.598,1.5,.276,.478,.113,1.089-.365,1.366-.477,.277-1.089,.114-1.366-.365-.179-.309-.511-.5-.867-.5h-2.268c-.551,0-1,.449-1,1,0,.378,.271,.698,.644,.76Z" />
+                    </svg>
+
+                    <div class="user_viewer_name_container">
+                        <span class="user_viewer_container_title">Имя:</span>
+                        <span class="user_viewer_container_value user_viewer_name">-</span>
+                    </div>
+
+                    <div class="user_viewer_surname_container">
+                        <span class="user_viewer_container_title">Фамилия:</span>
+                        <span class="user_viewer_container_value user_viewer_surname">-</span>
+                    </div>
+
+                    <div class="user_viewer_username_container">
+                        <span class="user_viewer_container_title">Логин:</span>
+                        <span class="user_viewer_container_value user_viewer_username">-</span>
+                    </div>
+
+                    <div class="user_viewer_usergroup_container">
+                        <span class="user_viewer_container_title">Группа:</span>
+                        <select class="user_creation_group_selector user_viewer_group_selector">
+                        </select>
+                    </div>
+
+                    <div class="user_viewer_email_container">
+                        <span class="user_viewer_container_title">Email:</span>
+                        <span class="user_viewer_container_value user_viewer_email">-</span>
+                    </div>
+
+                    <div class="user_viewer_phone_container">
+                        <span class="user_viewer_container_title">Телефон:</span>
+                        <span class="user_viewer_container_value user_viewer_phone">-</span>
+                    </div>
+
+                    <div class="user_viewer_country_container">
+                        <span class="user_viewer_container_title">Страна:</span>
+                        <span class="user_viewer_container_value user_viewer_country">-</span>
+                    </div>
+
+                    <div class="user_viewer_city_container">
+                        <span class="user_viewer_container_title">Город:</span>
+                        <span class="user_viewer_container_value user_viewer_city">-</span>
+                    </div>
+
+                    <div class="user_viewer_adress_container">
+                        <span class="user_viewer_container_title">Адрес:</span>
+                        <span class="user_viewer_container_value user_viewer_adress">-</span>
+                    </div>
+                </div>
+           </div>
+
+        </div>
+    </div>
+
+    <div class="notes_modal">
+        <div class="notes_modal_content">
+            <h2 class="modal_header">Заметки</h2>
+
+            <svg xmlns="http://www.w3.org/2000/svg" onclick="hide_notes_modal()" class="close_modal_button"
+            data-name="Layer 1" viewBox="0 0 24 24" width="34" height="34">
+                <path
+                    d="m22.242,5.272l-3.515-3.515c-1.133-1.133-2.64-1.757-4.242-1.757h-4.971c-1.602,0-3.109.624-4.243,1.757l-3.515,3.515c-1.133,1.134-1.757,2.641-1.757,4.243v4.971c0,1.602.624,3.109,1.757,4.243l3.515,3.515c1.134,1.133,2.641,1.757,4.243,1.757h4.971c1.603,0,3.109-.624,4.242-1.757l3.515-3.514c1.134-1.133,1.758-2.64,1.758-4.243v-4.971c0-1.603-.624-3.11-1.758-4.243Zm-5.803,9.789c.391.391.391,1.023,0,1.414-.195.195-.451.293-.707.293s-.512-.098-.707-.293l-3.043-3.043-3.043,3.043c-.195.195-.451.293-.707.293s-.512-.098-.707-.293c-.391-.391-.391-1.023,0-1.414l3.043-3.043-3.043-3.043c-.391-.391-.391-1.023,0-1.414s1.023-.391,1.414,0l3.043,3.043,3.043-3.043c.391-.391,1.023-.391,1.414,0s.391,1.023,0,1.414l-3.043,3.043,3.043,3.043Z" />
+            </svg>
+        </div>
+    </div>
+
+    <div class="finance_modal">
+        <div class="finance_modal_content">
+            <h2 class="modal_header">Финансы</h2>
+    
+            <svg xmlns="http://www.w3.org/2000/svg" onclick="hide_finance_modal()" class="close_modal_button"
+                data-name="Layer 1" viewBox="0 0 24 24" width="34" height="34">
+                <path
+                    d="m22.242,5.272l-3.515-3.515c-1.133-1.133-2.64-1.757-4.242-1.757h-4.971c-1.602,0-3.109.624-4.243,1.757l-3.515,3.515c-1.133,1.134-1.757,2.641-1.757,4.243v4.971c0,1.602.624,3.109,1.757,4.243l3.515,3.515c1.134,1.133,2.641,1.757,4.243,1.757h4.971c1.603,0,3.109-.624,4.242-1.757l3.515-3.514c1.134-1.133,1.758-2.64,1.758-4.243v-4.971c0-1.603-.624-3.11-1.758-4.243Zm-5.803,9.789c.391.391.391,1.023,0,1.414-.195.195-.451.293-.707.293s-.512-.098-.707-.293l-3.043-3.043-3.043,3.043c-.195.195-.451.293-.707.293s-.512-.098-.707-.293c-.391-.391-.391-1.023,0-1.414l3.043-3.043-3.043-3.043c-.391-.391-.391-1.023,0-1.414s1.023-.391,1.414,0l3.043,3.043,3.043-3.043c.391-.391,1.023-.391,1.414,0s.391,1.023,0,1.414l-3.043,3.043,3.043,3.043Z" />
+            </svg>
+        </div>
+    </div>
+
+    <div class="ban_prompt">
+        <div class="ban_prompt_content">
+            <h2 class="modal_header">Бан</h2>
+    
+            <svg xmlns="http://www.w3.org/2000/svg" onclick="hide_ban_prompt()" class="close_modal_button"
+                data-name="Layer 1" viewBox="0 0 24 24" width="34" height="34">
+                <path
+                    d="m22.242,5.272l-3.515-3.515c-1.133-1.133-2.64-1.757-4.242-1.757h-4.971c-1.602,0-3.109.624-4.243,1.757l-3.515,3.515c-1.133,1.134-1.757,2.641-1.757,4.243v4.971c0,1.602.624,3.109,1.757,4.243l3.515,3.515c1.134,1.133,2.641,1.757,4.243,1.757h4.971c1.603,0,3.109-.624,4.242-1.757l3.515-3.514c1.134-1.133,1.758-2.64,1.758-4.243v-4.971c0-1.603-.624-3.11-1.758-4.243Zm-5.803,9.789c.391.391.391,1.023,0,1.414-.195.195-.451.293-.707.293s-.512-.098-.707-.293l-3.043-3.043-3.043,3.043c-.195.195-.451.293-.707.293s-.512-.098-.707-.293c-.391-.391-.391-1.023,0-1.414l3.043-3.043-3.043-3.043c-.391-.391-.391-1.023,0-1.414s1.023-.391,1.414,0l3.043,3.043,3.043-3.043c.391-.391,1.023-.391,1.414,0s.391,1.023,0,1.414l-3.043,3.043,3.043,3.043Z" />
+            </svg>
+        </div>
+    </div>
+</body>
+
+</html>
